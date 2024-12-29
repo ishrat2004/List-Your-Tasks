@@ -38,10 +38,13 @@ body{
     height:155px;  
     background:#1c1f2b;
     border-radius: 15px; 
-    margin-top:41px;
-    margin-left:355px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
 }
+
 .add_bar::after{ 
     content:''; 
     position:absolute; 
@@ -54,35 +57,7 @@ body{
     z-index:-1;
     padding:3px;
     border-radius:15px;
-}
-.card::before{ 
-    filter:blur(5.5rem); 
-}
-.card{ 
-    color:white; 
-    background:#1c1f2b;
-    width: 300px; 
-    padding: 2em; 
-    text-align: center;
-    border-radius: 10px;
-   } 
-   .card::after, .card::before{ 
-       content:'';
-       position:absolute;
-       width: 370px;
-       height:215PX;
-       background-image: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095);
-       top:50%;
-       left:50%;
-       translate: -50% -50%;
-       z-index:-1;
-       padding:3px;
-       border-radius:10px; 
-   } 
-   .card::before{ 
-       filter:blur(1.5rem);
-       opacity:0.5;
-   } 
+} 
    .buttons_div{ 
     display:flex; 
     justify-content:space-between; 
